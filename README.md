@@ -354,10 +354,13 @@ resend-attachment-example/
 
 
 
-## Running the application
+## Running the Application
 
 Once you've added the necessary files and directory, run: 
 
 ```
 npm run dev
 ```
+
+This will run the application locally, and you'll be able to send emails from your web browser.
+
