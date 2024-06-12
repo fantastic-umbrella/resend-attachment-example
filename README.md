@@ -18,7 +18,7 @@ To complete this tutorial, create a free [Resend](https://resend.com/) account a
 1. install a fresh NextJS application.
    
 ```
-npx create-next-app@latest
+npx create-next-app
 ```
 
 2. You'll be asked some questions, to set the app up properly, answer them as the following:
