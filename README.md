@@ -15,13 +15,13 @@ To complete this tutorial, create a free [Resend](https://resend.com/) account a
 
 ## Installing Dependencies
 
-To start, install a fresh NextJS application.
-
+1. install a fresh NextJS application.
+   
 ```
 npx create-next-app@latest
 ```
 
-You'll be asked some questions, to set the app up properly, answer them as the following:
+2. You'll be asked some questions, to set the app up properly, answer them as the following:
 
 ```
 ✔ What is your project named? … [resend-attachment-example]
@@ -33,13 +33,13 @@ You'll be asked some questions, to set the app up properly, answer them as the f
 ✔ Would you like to customize the default import alias (@/*)? … *No*
 ```
 
-Change directories into the app name you created:
+3. Change directories into the app name you created:
 
 ```
 cd resend-attachment-example
 ```
 
-Install Resend, React Email, and Multipart (for handling file uploads):
+4. Install Resend, React Email, and Multipart (for handling file uploads):
 
 ```
 npm install resend @react-email/components multiparty
