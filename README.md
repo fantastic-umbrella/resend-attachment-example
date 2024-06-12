@@ -47,7 +47,7 @@ npm install resend @react-email/components multiparty
 
 ## App Configuration
 
-### Resend API Key
+### 1. Resend API Key
 
 In the application's root directory, create a `.env` file to store your Resend API Key.
 
@@ -64,7 +64,7 @@ Where `RESEND-API-KEY` is your API Key. To generate a new Resend API Key:
 > [!NOTE]
 > Save your API Key in your .env file, you'll only see this API Key once after generating. 
 
-### Hello.js File
+### 2. Hello.js File
 
 The hello.js file handles our uploading logic of the attachment. 
 
@@ -146,7 +146,7 @@ If you haven't already set up a domain, now is a great time! To add and verify a
 > [!NOTE]
 > Verifying your domain in Resend helps you follow recommendations from Gmail and Yahoo for best deliverability.
 
-### Index.js File
+### 3. Index.js File
 
 The index.js handles the front-end logic for the form to subject the attachment.
 
@@ -253,7 +253,7 @@ export default function Home() {
 ```
 
 
-### Create the _app.js File
+### 4. Create the _app.js File
 
 In the `pages` directory, update the `_app.js` file with the contents of:
 
@@ -269,7 +269,7 @@ function MyApp({ Component, pageProps }) {
 export default MyApp
 ```
 
-### Config set-up
+### 5. Config set-up
 
 This ensures React Email will run properly. 
 
@@ -287,7 +287,7 @@ Within the `jsconfig.json` file, add:
 ```
 
 
-### React Email Set-up
+### 6. React Email Set-up
 
 React Email handles email styling, using Tailwind.
 
