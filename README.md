@@ -11,17 +11,17 @@ This tutorial walks through creating a Next.js application that sends attachment
 
 ## Prerequisite
 
-To complete this tutorial, create a free [Resend](https://resend.com/) account and API Key for sending email, if you don't already have one. Resend allows you to deliver transactional and marketing emails at scale with a first-class developer experience.
+To complete this tutorial, create a free [Resend](https://resend.com/) account and API Key for sending email, if you don't already have one. Resend allows you to deliver transactional and marketing emails at scale with a first-class developer experience. 
 
 ## Installing Dependencies
 
-- To start, install a fresh NextJS application.
+To start, install a fresh NextJS application.
 
 ```
 npx create-next-app@latest
 ```
 
-- You'll be asked some questions, to set the app up properly, answer them as the following:
+You'll be asked some questions, to set the app up properly, answer them as the following:
 
 ```
 ✔ What is your project named? … [resend-attachment-example]
@@ -33,13 +33,13 @@ npx create-next-app@latest
 ✔ Would you like to customize the default import alias (@/*)? … *No*
 ```
 
-- Change directories into the app name you created:
+Change directories into the app name you created:
 
 ```
 cd resend-attachment-example
 ```
 
-- Install Resend, React Email, and Multipart (for handling file uploads):
+Install Resend, React Email, and Multipart (for handling file uploads):
 
 ```
 npm install resend @react-email/components multiparty
