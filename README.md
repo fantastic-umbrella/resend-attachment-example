@@ -39,7 +39,7 @@ npx create-next-app
 cd resend-attachment-example
 ```
 
-4. Install Resend, React Email, and Multipart (for handling file uploads):
+4. Install Resend, React Email, and Multiparty (for handling file uploads):
 
 ```
 npm install resend @react-email/components multiparty
