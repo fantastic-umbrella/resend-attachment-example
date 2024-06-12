@@ -15,7 +15,7 @@ To complete this tutorial, create a free [Resend](https://resend.com/) account a
 
 ## Installing Dependencies
 
-1. install a fresh NextJS application.
+1. Install a fresh Next.js application.
    
 ```
 npx create-next-app
