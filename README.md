@@ -1,6 +1,6 @@
 # Resend Attachment Example
 
-This tutorial will walk you through creating a Next.js application that sends attachments using Resend, React Email, and Tailwind CSS. After completing this, you'll have a Next.js application to upload files and email the files to a recipient of your choosing.
+This tutorial walks through creating a Next.js application that sends attachments using Resend, React Email, and Tailwind CSS. After completing this, you'll have a Next.js application to upload files and email the files to a recipient of your choosing.
 
 ## Table of Contents
 - [Prerequisite](#Prerequisite)
