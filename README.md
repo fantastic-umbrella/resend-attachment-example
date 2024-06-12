@@ -289,7 +289,7 @@ Within the `jsconfig.json` file, add:
 
 ### 6. React Email Set-up
 
-React Email handles email styling, using Tailwind.
+React Email handles email templates, using Tailwind.
 
 Create a new folder in the root directory named `components`. Create a file named `email-template.tsx`. With the contents of:
 
