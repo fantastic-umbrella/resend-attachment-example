@@ -1,13 +1,9 @@
-// components/mail-template.tsx
+// components/email-template.tsx
 
 import { Tailwind } from "@react-email/components";
-import React from "react";
+import * as React from "react";
 
-interface EmailTemplateProps {
-  firstName: string;
-}
-
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+export const EmailTemplate = ({
   firstName,
 }) => (
   <html>
@@ -26,6 +22,5 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     </Tailwind>
   </html>
 );
-
 
 export default EmailTemplate;
