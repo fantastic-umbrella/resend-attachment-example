@@ -3,6 +3,7 @@
 import fs from 'fs';
 import { Resend } from 'resend';
 import multiparty from 'multiparty';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { EmailTemplate } from '../../components/email-template';
 
 
@@ -34,11 +35,13 @@ const uploadFile = async (req, res) => {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     try {
+      const emailHtml = renderToStaticMarkup(<EmailTemplate firstName={recipientName} />);
+    
       await resend.emails.send({
         from: 'your-email@example.com',
         to: recipientEmail,
         subject: 'File Attachment',
-        react: EmailTemplate({ firstName: recipientName }),
+        html: emailHtml,
         attachments: [
           {
             filename: fileName,
@@ -46,7 +49,7 @@ const uploadFile = async (req, res) => {
           },
         ],
       });
-
+    
       res.status(200).json({ message: 'Email sent successfully' });
     } catch (error) {
       res.status(500).json({ error: error.message });
