@@ -294,16 +294,12 @@ React Email handles email templates, using Tailwind.
 Create a new folder in the root directory named `components`. Create a file named `email-template.tsx`. With the contents of:
 
 ```
-// components/mail-template.tsx
+// components/email-template.tsx
 
 import { Tailwind } from "@react-email/components";
-import React from "react";
+import * as React from "react";
 
-interface EmailTemplateProps {
-  firstName: string;
-}
-
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+export const EmailTemplate = ({
   firstName,
 }) => (
   <html>
@@ -322,7 +318,6 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
     </Tailwind>
   </html>
 );
-
 
 export default EmailTemplate;
 ```
